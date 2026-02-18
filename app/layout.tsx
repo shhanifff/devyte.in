@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: {
-    default: "Devyte - Digital Agency",
+    default: "Devyte | Digital Agency",
     template: "%s | Devyte",
   },
   description:
