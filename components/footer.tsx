@@ -8,28 +8,28 @@ export function Footer() {
     <footer className="bg-black text-white pt-32 pb-8 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Top Section: Navigation & Contact */}
-        <div className="grid md:grid-cols-12 gap-12 mb-32">
+        <div className="grid md:grid-cols-12 gap-12 lg:gap-16 mb-20 md:mb-32">
           {/* Brand / Intro (Span 4) */}
           <div className="md:col-span-4">
             <Link
               href="/"
-              className="text-2xl font-bold tracking-tighter mb-8 block"
+              className="text-2xl font-bold tracking-tighter mb-6 md:mb-8 block"
             >
               Devyte<span className="text-blue-500">.</span>
             </Link>
-            <p className="text-white/50 text-lg leading-relaxed max-w-sm">
+            <p className="text-white/50 text-base md:text-lg leading-relaxed max-w-sm">
               Crafting digital experiences that merge art, technology, and human
               connection. We build for the bold.
             </p>
           </div>
 
           {/* Links (Span 4) */}
-          <div className="md:col-span-4 flex justify-between md:justify-around">
+          <div className="md:col-span-4 grid grid-cols-2 gap-8 md:gap-12">
             <div>
               <h4 className="font-medium text-white/40 mb-6 uppercase tracking-widest text-xs">
                 Sitemap
               </h4>
-              <ul className="space-y-4 text-lg font-light">
+              <ul className="space-y-4 text-base md:text-lg font-light">
                 {["Work", "Services", "About", "Contact"].map((item) => (
                   <li key={item}>
                     <Link
@@ -47,7 +47,7 @@ export function Footer() {
               <h4 className="font-medium text-white/40 mb-6 uppercase tracking-widest text-xs">
                 Socials
               </h4>
-              <ul className="space-y-4 text-lg font-light">
+              <ul className="space-y-4 text-base md:text-lg font-light">
                 {["Instagram", "Twitter", "LinkedIn", "Behance"].map((item) => (
                   <li key={item}>
                     <Link
@@ -63,20 +63,20 @@ export function Footer() {
           </div>
 
           {/* Contact Large (Span 4) */}
-          <div className="md:col-span-4 text-right">
+          <div className="md:col-span-4 md:text-right">
             <h4 className="font-medium text-white/40 mb-6 uppercase tracking-widest text-xs">
               Got an Idea?
             </h4>
             <a
               href="mailto:hello@devyte.agency"
-              className="text-3xl md:text-4xl font-light hover:text-blue-400 transition-colors border-b border-white/20 pb-1"
+              className="text-xl sm:text-2xl md:text-4xl font-light hover:text-blue-400 transition-colors border-b border-white/20 pb-1 break-all md:break-normal"
             >
               devyte.digital@gmail.com
             </a>
             <div className="mt-8">
               <a
                 href="tel:+910000000000"
-                className="text-xl font-light hover:text-blue-400 transition-colors"
+                className="text-lg md:text-xl font-light hover:text-blue-400 transition-colors"
               >
                 +91 00000 00000
               </a>
