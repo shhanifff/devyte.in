@@ -25,7 +25,7 @@ export function Navbar() {
     { name: "Work", href: "#work" },
     { name: "Services", href: "#services" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const menuVariants = {
@@ -98,7 +98,7 @@ export function Navbar() {
               className="bg-white text-black hover:bg-white/90 rounded-full"
               asChild
             >
-              <Link href="#contact">Let's Talk</Link>
+              <Link href="/contact">Let's Talk</Link>
             </Button>
           </div>
 
@@ -141,7 +141,7 @@ export function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   asChild
                 >
-                  <Link href="#contact">Let's Talk</Link>
+                  <Link href="/contact">Let's Talk</Link>
                 </Button>
               </motion.div>
             </div>

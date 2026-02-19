@@ -30,13 +30,18 @@ export function Footer() {
                 Sitemap
               </h4>
               <ul className="space-y-4 text-base md:text-lg font-light">
-                {["Work", "Services", "About", "Contact"].map((item) => (
-                  <li key={item}>
+                {[
+                  { name: "Work", href: "#work" },
+                  { name: "Services", href: "#services" },
+                  { name: "About", href: "/about" },
+                  { name: "Contact", href: "/contact" },
+                ].map((item) => (
+                  <li key={item.name}>
                     <Link
-                      href={`#${item.toLowerCase()}`}
+                      href={item.href}
                       className="hover:text-blue-400 transition-colors flex items-center gap-2 group"
                     >
-                      {item}
+                      {item.name}
                       <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                   </li>
@@ -68,8 +73,8 @@ export function Footer() {
               Got an Idea?
             </h4>
             <a
-              href="mailto:hello@devyte.agency"
-              className="text-xl sm:text-2xl md:text-4xl font-light hover:text-blue-400 transition-colors border-b border-white/20 pb-1 break-all md:break-normal"
+              href="mailto:devyte.digital@gmail.com"
+              className="text-xl sm:text-2xl md:text-4xl font-light hover:text-blue-400 transition-colors border-b border-white/20 hover:border-blue-400 pb-1 break-all md:break-normal inline-block group"
             >
               devyte.digital@gmail.com
             </a>
