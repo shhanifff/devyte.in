@@ -31,10 +31,11 @@ export function Footer() {
               </h4>
               <ul className="space-y-4 text-base md:text-lg font-light">
                 {[
-                  { name: "Work", href: "#work" },
-                  { name: "Services", href: "#services" },
+                  { name: "Work", href: "/work" },
+                  { name: "Services", href: "/services" },
                   { name: "About", href: "/about" },
                   { name: "Contact", href: "/contact" },
+                  { name: "FAQ", href: "/faq" },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
@@ -50,19 +51,21 @@ export function Footer() {
             </div>
             <div>
               <h4 className="font-medium text-white/40 mb-6 uppercase tracking-widest text-xs">
-                Socials
+                Social Media
               </h4>
               <ul className="space-y-4 text-base md:text-lg font-light">
-                {["Instagram", "Twitter", "LinkedIn", "Behance"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href="#"
-                      className="hover:text-blue-400 transition-colors"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
+                {["Instagram", "LinkedIn", "Facebook", "Twitter"].map(
+                  (item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  ),
+                )}
               </ul>
             </div>
           </div>
@@ -93,10 +96,13 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-end justify-between gap-8">
           <div className="text-sm text-white/30 flex gap-8">
             <span>&copy; 2026 Devyte Agency</span>
-            <Link href="#" className="hover:text-white transition-colors">
+            <Link
+              href="/privacy"
+              className="hover:text-white transition-colors"
+            >
               Privacy
             </Link>
-            <Link href="#" className="hover:text-white transition-colors">
+            <Link href="/terms" className="hover:text-white transition-colors">
               Terms
             </Link>
           </div>

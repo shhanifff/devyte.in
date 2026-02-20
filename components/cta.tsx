@@ -2,10 +2,47 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function CTA() {
+  const textRef = useRef<HTMLSpanElement>(null);
+  const arrowRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (textRef.current) {
+      const chars = textRef.current.children;
+
+      gsap.to(chars, {
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power4.out",
+      });
+    }
+
+    if (arrowRef.current) {
+      gsap.to(arrowRef.current, {
+        y: -10,
+        duration: 0.6,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      });
+    }
+  }, []);
   return (
-    <section className="relative py-32 md:py-48 bg-gray-200 text-black overflow-hidden flex flex-col items-center justify-center min-h-[70vh]">
+    <section className="relative py-32 md:py-48 bg-[#EAE8E4] text-black overflow-hidden flex flex-col items-center justify-center min-h-[70vh]">
       <div className="container mx-auto px-6 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,12 +72,25 @@ export function CTA() {
 
             <span>Digital</span>
             <br />
-            <span className="font-serif italic font-light text-gray-500">
-              Narratives
+            <span
+              ref={textRef}
+              className="font-serif italic font-light text-gray-500 inline-block overflow-hidden align-bottom"
+            >
+              {"Narratives".split("").map((char, index) => (
+                <span
+                  key={index}
+                  className="inline-block translate-y-full opacity-0"
+                >
+                  {char}
+                </span>
+              ))}
             </span>
 
             {/* Inline Visual: Icon/Graphic */}
-            <span className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-600 text-white mx-4 align-middle rotate-12">
+            <span
+              ref={arrowRef}
+              className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-600 text-white mx-4 align-middle rotate-12"
+            >
               <ArrowUpRight className="w-6 h-6 md:w-8 md:h-8" />
             </span>
 

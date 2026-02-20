@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function About() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -73,9 +74,10 @@ export function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                We are a full stack digital powerhouse specializing in high
-                performance Web & Mobile App Development, precision targeted
-                Meta Ads, and strategic GMB SEO.
+                We are a full stack digital powerhouse based in Kerala,
+                specializing in high performance Web & Mobile App Development,
+                precision targeted Meta Ads, and strategic GMB SEO services in
+                Kozhikode, Kochi, and Trivandrum.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -96,10 +98,13 @@ export function About() {
               transition={{ delay: 0.8 }}
               className="mt-12"
             >
-              <button className="group flex items-center gap-4 text-sm font-medium tracking-widest uppercase hover:text-white/70 transition-colors cursor-pointer">
+              <Link
+                href="/about"
+                className="group flex items-center gap-4 text-sm font-medium tracking-widest uppercase hover:text-white/70 transition-colors cursor-pointer"
+              >
                 Read Our Story{" "}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>

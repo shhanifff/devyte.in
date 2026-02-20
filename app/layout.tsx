@@ -8,18 +8,38 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: {
-    default: "Devyte | Digital Agency",
+    default: "Devyte | Best Web Development Company in Kerala & India",
     template: "%s | Devyte",
   },
   description:
-    "Shaping the business of digital experiences. We are a premium digital agency specializing in web design, development, and branding.",
+    "Devyte is a premium digital agency and the best web development company in Kerala. We specialize in custom website development, UI/UX design, and SEO services across India.",
   keywords: [
-    "Digital Agency",
-    "Web Design",
-    "Web Development",
-    "Branding",
-    "UI/UX",
-    "Devyte",
+    "Web development company in Kerala",
+    "Website development company in India",
+    "Custom website development services",
+    "Mobile app development company Kerala",
+    "React web development agency",
+    "Next.js development company India",
+    "E-commerce website development Kerala",
+    "Business website development services",
+    "UI UX design company Kerala",
+    "Web UI design services India",
+    "Mobile app UI UX design agency",
+    "SaaS UI design company",
+    "Website redesign services",
+    "SEO company in Kerala",
+    "Technical SEO services India",
+    "On-page SEO services",
+    "Local SEO services Kerala",
+    "Google ranking services India",
+    "Google My Business setup service",
+    "GMB profile optimization Kerala",
+    "Facebook ads agency Kerala",
+    "Meta ads management services",
+    "Instagram ads agency India",
+    "Devyte web development",
+    "Devyte digital agency",
+    "Devyte Kerala",
   ],
   authors: [{ name: "Devyte" }],
   creator: "Devyte",
@@ -58,7 +78,7 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-        {/* Analytics Script added  */}
+        {/* Analytics Script added by shhanif */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QNLGYGSCJT"
           strategy="afterInteractive"

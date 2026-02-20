@@ -73,6 +73,16 @@ export function Hero() {
         >
           YOU GROW
         </motion.h1>
+
+        {/* SEO Tagline */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="mt-8 text-sm md:text-base tracking-[0.3em] uppercase text-white/40 font-medium"
+        >
+          Best Web Development Company in Kerala
+        </motion.p>
       </div>
 
       {/* Floating Gradient for subtle depth (Optional, keeping it very subtle for this clean look) */}
