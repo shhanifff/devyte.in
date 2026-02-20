@@ -78,7 +78,7 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-        {/* Analytics Script added by shhanif */}
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QNLGYGSCJT"
           strategy="afterInteractive"
