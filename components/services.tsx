@@ -9,31 +9,31 @@ const services = [
     id: "01",
     title: "Web Development",
     description:
-      "As a leading React & Next.js development company in India, we build high-performance e-commerce websites and custom web applications in Kerala.",
+      "Immersive digital experiences built on solid foundations. Speed, scale, and conversion.",
   },
   {
     id: "02",
     title: "App Development",
     description:
-      "Top mobile app development company in Kerala, building native and cross-platform applications for seamless user engagement.",
+      "Native and cross-platform mobile applications designed for intuition and engagement.",
   },
   {
     id: "03",
     title: "SEO Strategy",
     description:
-      "A premier SEO company in Kerala providing technical SEO services and Google ranking services in India to dominate search results.",
+      "Data-driven optimization to ensure you're found first. Dominate search rankings.",
   },
   {
     id: "04",
     title: "GMB Growth",
     description:
-      "Google My Business setup and GMB profile optimization in Kerala. Capture your local audience and climb the maps.",
+      "Capture your local audience. Optimize your profile to put you on the map.",
   },
   {
     id: "05",
     title: "Meta Advertising",
     description:
-      "Professional Facebook ads agency in Kerala. Expert Meta ads management services to scale your business ROI.",
+      "Precision targeting that delivers ROI. Compelling campaigns that scale revenue.",
   },
 ];
 
@@ -94,10 +94,7 @@ export function Services() {
             ))}
 
             {/* Slot 6 - CTA Block */}
-            <Link
-              href="/contact"
-              className="bg-[#2A2A2A] text-white p-8 md:p-12 border-b border-black/10 flex flex-col justify-between min-h-[300px] cursor-pointer group overflow-hidden relative"
-            >
+            <div className="bg-[#2A2A2A] text-white p-8 md:p-12 border-b border-black/10 flex flex-col justify-between min-h-[300px] cursor-pointer group overflow-hidden relative">
               <div className="relative z-10 flex flex-col h-full justify-between">
                 <div className="flex justify-between items-start">
                   <p className="text-sm font-medium text-white/40 uppercase tracking-wider">
@@ -117,7 +114,7 @@ export function Services() {
                   </span>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

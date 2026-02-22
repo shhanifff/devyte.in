@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export function AboutVision() {
   return (
     <section className="py-32 bg-black text-white relative isolate overflow-hidden">
@@ -18,28 +14,23 @@ export function AboutVision() {
 
         <div className="grid lg:grid-cols-2 gap-20">
           {/* Title */}
-          <div>
-            <motion.h3
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="text-6xl md:text-8xl font-light tracking-tight leading-none mb-6"
-            >
+          <div className="animate-in fade-in slide-in-from-left-5 duration-700">
+            <h3 className="text-6xl md:text-8xl font-light tracking-tight leading-none mb-6">
               Vision & <br /> Mission
-            </motion.h3>
+            </h3>
           </div>
 
           {/* Content */}
-          <div className="space-y-12">
+          <div className="space-y-12 animate-in fade-in slide-in-from-right-5 duration-700">
             <div>
               <h4 className="text-xl font-medium mb-4 flex items-center gap-3">
                 <span className="w-2 h-2 bg-blue-500 rounded-full" />
                 Our Vision
               </h4>
               <p className="text-2xl text-white/70 font-light leading-relaxed">
-                To redefine the digital landscape by merging artistic expression
-                with technical precision, creating online experiences that feel
-                less like websites and more like destinations.
+                As a premier web development company in Kerala, our vision is to
+                merge artistic expression with technical precision, creating
+                digital destinations that redefine industry standards in India.
               </p>
             </div>
 
@@ -51,16 +42,17 @@ export function AboutVision() {
                 Our Mission
               </h4>
               <p className="text-lg text-white/50 leading-relaxed max-w-md">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas est lectus, pulvinar sit amet nisl eu, blandit. We
-                strive to empower brands with tools that scale.
+                We strive to empower brands with tools that scale. From
+                technical SEO services in India to advanced Meta ads management,
+                our mission is to build future-proof ecosystems for every
+                ambitious business.
               </p>
             </div>
           </div>
         </div>
 
         {/* Stats Row */}
-        <div className="mt-24 border-t border-white/10 pt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="mt-24 border-t border-white/10 pt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left animate-in fade-in duration-1000">
           <div>
             <h4 className="text-4xl md:text-5xl font-light mb-2">40+</h4>
             <p className="text-white/50 text-sm tracking-widest uppercase">

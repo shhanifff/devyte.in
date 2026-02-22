@@ -22,8 +22,8 @@ export function Navbar() {
   });
 
   const navLinks = [
-    { name: "Work", href: "/work" },
     { name: "Services", href: "/services" },
+    { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
@@ -34,7 +34,7 @@ export function Navbar() {
       y: "-100%",
       transition: {
         duration: 0.5,
-        type: "spring",
+        type: "spring" as any,
         stiffness: 100,
         damping: 20,
         when: "afterChildren",
@@ -45,7 +45,7 @@ export function Navbar() {
       y: 0,
       transition: {
         duration: 0.5,
-        type: "spring",
+        type: "spring" as any,
         stiffness: 100,
         damping: 20,
         when: "beforeChildren",
