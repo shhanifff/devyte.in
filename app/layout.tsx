@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: {
-    default: "Devyte | Digital Pore Solution Agency",
+    default: "Devyte | Web & Mobile App Development Company in Kerala",
     template: "%s | Devyte",
   },
   description:
