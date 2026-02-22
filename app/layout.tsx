@@ -52,6 +52,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/devyte logo.png",
+    shortcut: "/devyte logo.png",
+    apple: "/devyte logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -67,7 +72,6 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QNLGYGSCJT"
           strategy="afterInteractive"
