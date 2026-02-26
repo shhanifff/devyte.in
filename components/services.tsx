@@ -7,27 +7,27 @@ import Link from "next/link";
 const services = [
   {
     id: "01",
-    title: "Web UI/UX Development",
+    title: "Web & Mobile Development",
     description:
-      "High-performance websites designed with a focus on conversion and user-centric UI/UX design.",
+      "Crafting high-performance websites and intuitive mobile applications designed for seamless user experiences and business growth.",
   },
   {
     id: "02",
-    title: "Mobile App UI/UX",
+    title: "GMB Optimization",
     description:
-      "Native and cross-platform mobile app development with intuitive and modern UI/UX architecture.",
+      "Dominating local search rankings with expert Google My Business optimization and strategic local SEO to drive more foot traffic.",
   },
   {
     id: "03",
-    title: "Google My Business (GMB)",
+    title: "Search Engine Optimization",
     description:
-      "Dominating local search with professional GMB optimization and local SEO strategies.",
+      "Precision-targeted SEO strategies and technical audits to increase organic visibility and scale your digital authority across search engines.",
   },
   {
     id: "04",
-    title: "Meta Advertising & SEO",
+    title: "Meta Ads Management",
     description:
-      "Precision-targeted Meta ads and technical SEO strategy to scale your digital presence.",
+      "Results-driven Facebook and Instagram advertising campaigns designed to maximize ROI and connect your brand with the right audience.",
   },
 ];
 

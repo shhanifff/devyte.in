@@ -4,41 +4,31 @@ import Link from "next/link";
 const services = [
   {
     id: "01",
-    title: "Web App Development",
+    title: "Web & Mobile Development",
     description:
-      "As a leading digital solution company in India, Devyte offers custom website development services. We are a top-rated Next.js development company in India and a React web development agency.",
-    tags: ["Next.js Development", "React Agency", "E-commerce", "Custom Dev"],
+      "Devyte builds high-performance digital products. We specialize in custom website development using Next.js and React, alongside native and cross-platform mobile apps built for scale.",
+    tags: ["Next.js", "React Native", "iOS & Android", "Custom UI/UX"],
   },
   {
     id: "02",
-    title: "Mobile App Development",
+    title: "GMB Optimization",
     description:
-      "Devyte is a premier mobile app development company. We build intuitive native and cross-platform experiences designed for engagement and scale.",
-    tags: [
-      "Mobile App Development",
-      "UI UX Agency",
-      "iOS & Android",
-      "Flutter",
-    ],
+      "Maximize your local visibility with expert Google My Business management. We optimize your profile to rank higher, attract more customers, and dominate local search results.",
+    tags: ["Local SEO", "Profile Audit", "Review Management", "Map Rankings"],
   },
   {
     id: "03",
-    title: "SEO & Local Audit",
+    title: "Search Engine Optimization",
     description:
-      "Drive organic traffic with the best SEO strategies. Devyte provides technical SEO, on-page optimization, and local GMB profile growth to dominate search rankings.",
-    tags: ["Technical SEO", "Local SEO", "GMB Optimization", "Google Ranking"],
+      "Our technical SEO strategies drive organic growth. From keyword research and on-page optimization to technical audits, we ensure your brand stays ahead of the competition.",
+    tags: ["Technical SEO", "On-Page SEO", "Backlink Strategy", "Analytics"],
   },
   {
     id: "04",
     title: "Meta Ads Management",
     description:
-      "Scale your ROI with results-driven Facebook and Instagram ads. Devyte offers Meta ads management services and paid ads management for high-growth brands.",
-    tags: [
-      "Facebook Ads",
-      "Instagram Ads",
-      "Meta Ads Management",
-      "ROI Focused",
-    ],
+      "Accelerate your growth with precision-targeted Meta ads. We manage Facebook and Instagram campaigns that focus on high-intent audiences and maximum ROI.",
+    tags: ["Facebook Ads", "Instagram Ads", "Ad Creative", "ROI Focused"],
   },
 ];
 
