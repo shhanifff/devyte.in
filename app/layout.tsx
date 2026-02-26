@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Script from "next/script";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -54,10 +55,14 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/devyte logo.png",
-    shortcut: "/devyte logo.png",
-    apple: "/devyte logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
@@ -87,6 +92,7 @@ export default function RootLayout({
           `}
         </Script>
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
